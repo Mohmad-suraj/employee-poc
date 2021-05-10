@@ -1,0 +1,47 @@
+<div class="container">
+<div class="headings"><h1>The Admin Dashboard</h1></div>
+<br>
+<div class="box1">
+<label>Employee Name :</label>
+<br>
+<input type="text" [(ngModel)]="name"><br>
+<label>Employee Id :</label><br>
+<input type="text" [(ngModel)]="id"><br>
+<label>Employee Department :</label><br>
+<input type="text" [(ngModel)]="dep"><br>
+<label>Email :</label><br>
+<input type="text" [(ngModel)]="mail"><br>
+<label>password :</label><br>
+<input type="text" [(ngModel)]="pass"><br>
+<br>
+
+<button class="btn btn-primary" (click)=add(this.name,this.id,this.dep,this.mail,this.pass)>{{title}}</button>
+</div>
+<br>
+<div>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>sr no</th>
+                <th>Name</th>
+                <th>Id</th>
+                <th>Department</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr (click)="editing(k,j)" *ngFor="let k of d, let j=index">
+                <td>{{j+1}}</td>
+                <td>{{k.name1}}</td>
+                <td>{{k.id1}}</td>
+                <td>{{k.dep1}}</td>
+                <td>{{k.mail1}}</td>
+                <td>{{k.passs1}}</td>
+                <td><button class="btn btn-primary" (click)=edit(k.id1)>edit</button> <button class="btn btn-danger" (click)=delete(j)>delete</button> </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>

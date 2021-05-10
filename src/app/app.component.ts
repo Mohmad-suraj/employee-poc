@@ -9,23 +9,8 @@ import { NgForm } from '@angular/forms';
 })
 export class AppComponent {
   title = 'demo';
+    public name:any;
   
-  public name:string;
-  public id:number;
-  employlist=[];
- 
- 
-  
-  submit(em,emno){
- 
-  let payload={name:em.value,id:emno.value}
-   this.employlist.push(payload);
-   console.log(this.employlist);
-   
-  }
-  removinguser(item){
-    this.employlist.splice(item,1)
-  }
 
   } 
 

@@ -1,0 +1,29 @@
+input{
+    width:50%;
+    border-radius:30px;
+    height:40px;
+    border-style: hidden;
+}
+label{
+    color:rgb(0, 0, 0);
+    font-size:20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.box{
+    background-color: rgb(226, 226, 226);
+    margin-top: 50px;
+    height: 600px;
+    padding:50px;
+}
+#ima{
+    border-radius: 50%;
+    height:300px;
+    width:300px;
+}
+.row{
+   margin:70px;
+}
+.btn{
+    border-radius:30px;
+}

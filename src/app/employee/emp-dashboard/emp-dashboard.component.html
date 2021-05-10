@@ -1,0 +1,30 @@
+<div class="container-fluid">
+    <div class="container">
+    <div class="box">
+        <br>
+    <div class="head"><h1>Hi !This is your Dashboard</h1></div>
+    <br>
+    <div><table class='table table-bordered'>
+       <thead>
+       <th>Employee ID  </th>
+       <th>Employee Name</th>
+       <th>Employee Mail</th>
+       </thead>
+       <tbody>
+       <tr (click)="edit(this.id)">
+        <td> {{id}} </td>
+        <td> {{name}} </td>
+        <td> {{mail}} </td>
+       </tr>
+       </tbody>
+    </table>
+</div>
+<br>
+<div class="text-center">
+  <button class="btn btn-primary" (click)="edit(this.id)">Edit</button><br><br>
+  <button class="btn btn-danger" (click)="exit()">Exit</button>
+</div>
+
+</div>
+</div>
+</div>

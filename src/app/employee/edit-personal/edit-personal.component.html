@@ -1,0 +1,18 @@
+<div class="container">
+    <br>
+  <div class="headings"><h1>
+      Update your details here 
+  </h1></div>
+<div id="box">
+ 
+<label>Employee Name</label>
+<br>
+<input type="text" [(ngModel)]="name"><br>
+<label>Employee Id</label><br>
+<input type="text" [(ngModel)]="id"><br>
+<label>Employee Department</label><br>
+<input type="text" [(ngModel)]="dep"><br> 
+<br>
+<button class="btn btn-primary" (click)="update(this.name,this.id,this.dep)" >update</button>
+</div>
+</div>
